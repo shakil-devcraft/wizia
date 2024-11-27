@@ -93,3 +93,22 @@ export const trainInfo = [
         trainText: "Works with all your existing tools"
     }
 ];
+
+
+
+
+// allocate data
+export const allocateInfo = [
+    {
+        percent: "32%",
+        description: "Improvement in Open Rates"
+    },
+    {
+        percent: "75%",
+        description: "Improvement in Ramp Time"
+    },
+    {
+        percent: "35%",
+        description: "Improvement in Meetings Booked"
+    }
+];
