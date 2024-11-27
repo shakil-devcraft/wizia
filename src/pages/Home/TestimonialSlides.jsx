@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "../../components/shared/Container/Container";
 import { testimonials } from "../../api";
 
@@ -26,6 +26,19 @@ const TestimonialSlider = () => {
         );
     };
 
+    // autoplay codes
+    const autoplayInterval = 5000; // 5 seconds
+
+    // useEffect call
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNext();
+        }, autoplayInterval);
+
+        return () => clearInterval(interval);
+    }, [currentIndex]);
+
+
     // data structure
     const {quote, name, position} = testData[currentIndex];
 
@@ -51,7 +64,7 @@ const TestimonialSlider = () => {
                             {
                                 testData?.map((item, idx) => (
                                     // currentIndex === idx ? <button key={idx} className="size-2 rounded-full bg-primary-color text-white block"></button> : <button key={idx} className="size-2 rounded-full bg-[#394648] text-white block"></button>
-                                    <button key={idx} className={`size-2 rounded-full transition duration-150 ${currentIndex === idx ? "bg-primary-color" : "bg-[#394648]"}  text-white block`}></button>
+                                    <button key={idx} onClick={() => setCurrentIndex(idx)} className={`size-2 rounded-full transition duration-150 ${currentIndex === idx ? "bg-primary-color" : "bg-[#394648]"}  text-white block`}></button>
                                 ))
                             }
                         </div>
