@@ -21,3 +21,26 @@ export const navLinks = [
 
 
 
+// company logos
+export const companyLogos = [
+    {
+        img: "/img/company (1).png",
+        link: "#",
+    },
+    {
+        img: "/img/company (2).png",
+        link: "#",
+    },
+    {
+        img: "/img/company (3).png",
+        link: "#",
+    },
+    {
+        img: "/img/company (4).png",
+        link: "#",
+    },
+    {
+        img: "/img/company (5).png",
+        link: "#",
+    }
+];
