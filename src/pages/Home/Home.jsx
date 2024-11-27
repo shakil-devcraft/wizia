@@ -1,6 +1,7 @@
 
 import Leads from "./Leads";
 import Service from "./Service";
+import Train from "./Train";
 import Trusted from "./Trusted";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Leads />
             <Trusted />
             <Service />
+            <Train />
         </section>
     );
 };

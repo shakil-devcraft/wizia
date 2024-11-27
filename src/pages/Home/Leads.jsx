@@ -3,7 +3,7 @@ import Container from "../../components/shared/Container/Container";
 
 const Leads = () => {
     return (
-        <div className="py-[84px] bg-[url(public/img/lead-bg.png)] bg-cover object-cover">
+        <div className="py-[84px] bg-[url(/img/lead-bg.png)] bg-cover object-cover">
             <Container>
                 <div className="text-center md:text-start">
                     <h3 className="mb-2 md:mb-0 text-2xl font-normal text-primary-color font-montserrat leading-[29px]">AI SDRs (aiDRs)</h3>

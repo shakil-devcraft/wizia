@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer';
 function App() {
 
   return (
-    <section className='text-white bg-bg-color'>
+    <section className='text-white bg-bg-color overflow-hidden'>
       <Navbar />
         <div className='min-h-[calc(100vh-201px)]'>
           <Outlet />

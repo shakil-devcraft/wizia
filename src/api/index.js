@@ -66,3 +66,30 @@ export const serviceInfo = [
         description: "Train an aiDR on an outbound patch, to nurture inbound leads, or to reach out to your long tail of SMB customers at renewal time."
     },
 ];
+
+
+
+
+// train info
+export const trainInfo = [
+    {
+        // <i className='bx bx-check-circle'></i>
+        trainIcon: "bx bx-check-circle",
+        trainText: "Quick to ramp"
+    },
+    {
+        // <i className='bx bx-check-circle'></i>
+        trainIcon: "bx bx-check-circle",
+        trainText: "Easy to optimize"
+    },
+    {
+        // <i className='bx bx-check-circle'></i>
+        trainIcon: "bx bx-check-circle",
+        trainText: "Quick to scale up"
+    },
+    {
+        // <i className='bx bx-check-circle'></i>
+        trainIcon: "bx bx-check-circle",
+        trainText: "Works with all your existing tools"
+    }
+];
