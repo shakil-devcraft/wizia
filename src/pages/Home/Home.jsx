@@ -1,4 +1,5 @@
 
+import Allocate from "./Allocate";
 import Leads from "./Leads";
 import Service from "./Service";
 import Train from "./Train";
@@ -11,6 +12,7 @@ const Home = () => {
             <Trusted />
             <Service />
             <Train />
+            <Allocate />
         </section>
     );
 };
