@@ -39,30 +39,29 @@ const TestimonialSlider = () => {
   return (
     <section>
         <Container>
-            <div className="flex justify-between items-center text-center gap-6">
+            <div className="flex justify-between items-center text-center gap-6 py-[84px]">
                 {/* left icon */}
-                <div>
-                    <div className="size-10 bg-white/60 flex justify-center items-center text-center rounded-full">
-                        <i className='bx bx-left-arrow-alt text-3xl' ></i>
+                <div className="hidden md:flex">
+                    <div className="size-10 bg-[#96ACAF33]/20 flex justify-center items-center text-center rounded-lg">
+                        <i className='bx bx-left-arrow-alt text-2xl text-primary-color' ></i>
                     </div>
                 </div>
                 {/* content */}
                 <div>
                     <img className="mx-auto" src="/img/qoute.png" alt="" />
-                    <p>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-                    <span>John Doe</span>
-                    <p>Chief Strategy Officer @ Company</p>
-                    <p></p>
+                    <p className="lg:py-9 py-6 font-light lg:text-3xl md:text-lg text-base font-worksans lg:w-[880px]">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    <span className="text-primary-color font-worksans font-semibold lg:text-2xl text-xl mb-1">John Doe</span>
+                    <p className="font-worksans font-normal lg:text-lg text-base">Chief Strategy Officer @ Company</p>
 
-                    <div className="flex justify-center items-center gap-2">
-                        <span className="w-3 h-3 rounded-full bg-yellow-300 text-white block"></span>
+                    <div className="flex justify-center items-center gap-2 lg:mt-10 mt-8">
+                        <span className="size-2 rounded-full bg-primary-color text-white block"></span>
                     </div>
                 </div>
 
                 {/* right icon */}
-                <div>
-                    <div className="size-10 bg-white/60 flex justify-center items-center text-center rounded-full">
-                        <i className='bx bx-right-arrow-alt text-3xl' ></i>
+                <div className="hidden md:flex">
+                    <div className="size-10 bg-[#96ACAF33]/20 flex justify-center items-center text-center rounded-lg">
+                        <i className='bx bx-right-arrow-alt text-2xl text-primary-color' ></i>
                     </div>
                 </div>
             </div>
