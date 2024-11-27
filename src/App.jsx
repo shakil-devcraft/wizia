@@ -9,9 +9,9 @@ function App() {
   return (
     <section className='text-white bg-bg-color'>
       <Navbar />
-      <div className='min-h-[calc(100vh-201px)]'>
-        <Outlet />
-      </div>
+        <div className='min-h-[calc(100vh-201px)]'>
+          <Outlet />
+        </div>
       <Footer />
     </section>
   )

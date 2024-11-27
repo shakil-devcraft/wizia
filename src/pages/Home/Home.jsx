@@ -1,9 +1,11 @@
 
+import Leads from "./Leads";
+
 const Home = () => {
     return (
-        <div>
-            Home
-        </div>
+        <section>
+            <Leads />
+        </section>
     );
 };
 
