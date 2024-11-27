@@ -7,7 +7,7 @@ const SmallNavbar = ({openMenu}) => {
     console.log(openMenu);
 
     return (
-        <section className={`bg-bg-color fixed w-full h-screen top-0 left-0 mt-[68px] ${!openMenu && "hidden"}`}>
+        <section className={`bg-bg-color fixed w-full h-screen top-0 left-0 mt-[68px] ${!openMenu && "hidden"} transition duration-300`}>
             <Container>
                 <nav className="py-10">
 
@@ -15,10 +15,10 @@ const SmallNavbar = ({openMenu}) => {
                     <ul className="flex-col justify-center items-center space-y-5">
                         {
                             navLinks?.map(({item, link}, idx) => (
-                                <li onClick={openMenu} key={idx} className="text-t-secondary font-bold text-base leading-[17.85px]"><NavLink
+                                <li onClick={openMenu} key={idx} className="text-white font-normal font-worksans text-base leading-[17.85px]"><NavLink
                                 to={link}
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active text-white" : "text-primary-color"
+                                    isPending ? "pending" : isActive ? "active text-white/80" : "text-white"
                                 }
                                 >
                                 {item}
