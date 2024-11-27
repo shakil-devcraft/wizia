@@ -112,3 +112,25 @@ export const allocateInfo = [
         description: "Improvement in Meetings Booked"
     }
 ];
+
+
+
+
+// testimonials info
+export const testimonials = [
+    {
+      quote: "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      name: "John Doe",
+      position: "Chief Strategy Officer @ Company",
+    },
+    {
+      quote: "Another testimonial content goes here. You can replace it with real feedback from your clients.",
+      name: "Jane Smith",
+      position: "Marketing Manager @ Business",
+    },
+    {
+      quote: "This is a great component for showcasing testimonials in a clean and modern way.",
+      name: "Alex Johnson",
+      position: "Developer @ TechCorp",
+    },
+];

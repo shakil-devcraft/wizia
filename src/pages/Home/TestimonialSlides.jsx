@@ -1,41 +1,13 @@
 
-// import { useState } from "react";
-
 import { useState } from "react";
 import Container from "../../components/shared/Container/Container";
+import { testimonials } from "../../api";
 
-const testimonials = [
-    {
-      quote: "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-      name: "John Doe",
-      position: "Chief Strategy Officer @ Company",
-    },
-    {
-      quote: "Another testimonial content goes here. You can replace it with real feedback from your clients.",
-      name: "Jane Smith",
-      position: "Marketing Manager @ Business",
-    },
-    {
-      quote: "This is a great component for showcasing testimonials in a clean and modern way.",
-      name: "Alex Johnson",
-      position: "Developer @ TechCorp",
-    },
-];
 
 const TestimonialSlider = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
 
-//   const handlePrev = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-//     );
-//   };
-
-//   const handleNext = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-//     );
-//   };
+    // access data
+    const testData = testimonials;
 
     // index count
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,7 +27,7 @@ const TestimonialSlider = () => {
     };
 
     // data structure
-    const {quote, name, position} = testimonials[currentIndex];
+    const {quote, name, position} = testData[currentIndex];
 
 
     return (
@@ -75,8 +47,13 @@ const TestimonialSlider = () => {
                         <span className="text-primary-color font-worksans font-semibold lg:text-2xl text-xl mb-1">{name}</span>
                         <p className="font-worksans font-normal lg:text-lg text-base">{position}</p>
 
-                        <div className="flex justify-center items-center gap-2 lg:mt-10 mt-8">
-                            <span className="size-2 rounded-full bg-primary-color text-white block"></span>
+                        <div className="flex justify-center items-center gap-4 lg:mt-10 mt-8">
+                            {
+                                testData?.map((item, idx) => (
+                                    // currentIndex === idx ? <button key={idx} className="size-2 rounded-full bg-primary-color text-white block"></button> : <button key={idx} className="size-2 rounded-full bg-[#394648] text-white block"></button>
+                                    <button key={idx} className={`size-2 rounded-full transition duration-150 ${currentIndex === idx ? "bg-primary-color" : "bg-[#394648]"}  text-white block`}></button>
+                                ))
+                            }
                         </div>
                     </div>
 
