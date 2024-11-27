@@ -1,5 +1,6 @@
 
 import Leads from "./Leads";
+import Service from "./Service";
 import Trusted from "./Trusted";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <section>
             <Leads />
             <Trusted />
+            <Service />
         </section>
     );
 };
