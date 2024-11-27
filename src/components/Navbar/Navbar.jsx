@@ -15,7 +15,7 @@ const Navbar = () => {
     };
 
     return (
-        <section className="bg-b-secondary">
+        <section className="bg-b-secondary border-b-2 border-b-[#183A40]">
             <div>
                 <Container>
                     <nav className="flex justify-between items-center py-4 md:py-5 lg:py-6">
@@ -58,7 +58,6 @@ const Navbar = () => {
 
                 </Container>
             </div>
-            <hr />
         </section>
     );
 };

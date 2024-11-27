@@ -7,7 +7,7 @@ const SmallNavbar = ({openMenu}) => {
     console.log(openMenu);
 
     return (
-        <section className={`bg-white fixed w-full h-screen top-0 left-0 mt-[68px] ${!openMenu && "hidden"}`}>
+        <section className={`bg-bg-color fixed w-full h-screen top-0 left-0 mt-[68px] ${!openMenu && "hidden"}`}>
             <Container>
                 <nav className="py-10">
 

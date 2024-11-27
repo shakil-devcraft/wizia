@@ -14,6 +14,7 @@ export default {
         "primary-color": "#0FF1F6",
         "secondary-color": "#14BCB2",
         "bg-color": "#002228",
+        "footer-bg": "#07292F",
       }
     },
   },
