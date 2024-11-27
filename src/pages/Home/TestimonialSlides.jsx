@@ -36,8 +36,8 @@ const TestimonialSlider = () => {
                 <div className="flex justify-between items-center text-center gap-6 py-[84px]">
                     {/* left icon */}
                     <div className="hidden md:flex">
-                        <button onClick={() => handlePrev()} className="size-10 bg-[#96ACAF33]/20 flex justify-center items-center text-center rounded-lg">
-                            <i className='bx bx-left-arrow-alt text-2xl text-primary-color/50 hover:text-primary-color hover:shadow-lg'></i>
+                        <button onClick={() => handlePrev()} className="size-10 slide_btn bg-[#96ACAF33]/20 flex justify-center items-center text-center rounded-lg">
+                            <i className='bx bx-left-arrow-alt text-2xl text-primary-color/50 hover:shadow-lg'></i>
                         </button>
                     </div>
                     {/* content */}
@@ -59,8 +59,8 @@ const TestimonialSlider = () => {
 
                     {/* right icon */}
                     <div className="hidden md:flex">
-                        <button onClick={() => handleNext()} className="size-10 bg-[#96ACAF33]/20 flex justify-center items-center text-center rounded-lg">
-                            <i className='bx bx-right-arrow-alt text-2xl text-primary-color/50 hover:text-primary-color hover:shadow-lg'></i>
+                        <button onClick={() => handleNext()} className="size-10 slide_btn bg-[#96ACAF33]/20 flex justify-center items-center text-center rounded-lg">
+                            <i className='bx bx-right-arrow-alt text-2xl text-primary-color/50 hover:shadow-lg'></i>
                         </button>
                     </div>
                 </div>
